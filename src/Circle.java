@@ -1,19 +1,28 @@
 public class Circle extends Figure {
-    double radius;
+    private double radius;
+
+    public double getRadius() {
+        return radius;
+    }
+
+    public void setRadius(double radius) {
+        this.radius = radius;
+    }
 
     public Circle(int radius) {
         this.radius = radius;
     }
 
     @Override
-    void square() {
-        square = pi * radius * radius;
-        System.out.println(square);
+    double square() {
+        return square = PI * radius * radius;
+        //System.out.println(square);
     }
 
     @Override
-    void perimeter() {
-        perimeter = 2 * pi * radius;
-        System.out.println(perimeter);
+    double perimeter() {
+        return perimeter = 2 * PI * radius;
+        //System.out.println(perimeter);
+
     }
 }

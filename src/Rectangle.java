@@ -1,6 +1,22 @@
 public class Rectangle extends Figure {
-    double width;
-    double length;
+    private double width;
+    private double length;
+
+    public double getWidth() {
+        return width;
+    }
+
+    public double getLength() {
+        return length;
+    }
+
+    public void setWidth(double width) {
+        this.width = width;
+    }
+
+    public void setLength(double length) {
+        this.length = length;
+    }
 
     public Rectangle(double width, double length) {
         this.width = width;
@@ -8,14 +24,14 @@ public class Rectangle extends Figure {
     }
 
     @Override
-    void square() {
-        square = width * length;
-        System.out.println(square);
+    double square() {
+        return square = width * length;
+        //System.out.println(square);
     }
 
     @Override
-    void perimeter() {
-        perimeter = 2 * (width + length);
-        System.out.println(perimeter);
+    double perimeter() {
+        return perimeter = 2 * (width + length);
+        //System.out.println(perimeter);
     }
 }
